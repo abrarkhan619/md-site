@@ -6,13 +6,17 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: black
+}
+
 .navbar {
     background: #000000;
     color: white;
-    height: 3rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
@@ -20,8 +24,8 @@
 }
 
 .navbar__logo {
-    padding-top: 30px;
-    max-height: 110px;
+    /* padding-top: 30px; */
+    max-height: 70px;
 }
 
 .hero {
@@ -44,6 +48,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    padding: 10px;
     position: relative;
     z-index: 1;
 
@@ -53,7 +58,26 @@
 }
 
 .hero__title {
-    font-size: 80px;
+    font-size: 5rem;
+}
+
+.hero__button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.8rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+.hero__button:hover {
+    background-color: #007504;
+    transition: all 0.5s;
 }
 
 .campaigns {
@@ -63,11 +87,17 @@
 
 .campaign__box{
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background-position: center;
     background-size: cover;
     overflow: hidden;
     color: white;
+    display: flex;
+    align-items:flex-end;
+    justify-content:center;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    cursor: pointer;
 }
 
 .campaign1 {
@@ -86,62 +116,83 @@
     background-image: url("images/water-well.jpg");
 }
 
-/* .hero {
-    width: 100%;
-    height: 60vh;
-    background-image: url("images/rohingya-bgd.jpg");
-    background-position: center;
-
-    /* background-size: 100%; */
-    background-size: cover;
-    /* position: relative; */
-    overflow: hidden;
-    color: white;
-    
-} */
-/* 
-.overlay {
+.campaign__overlay {
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 60px;
     position: relative;
     z-index: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* .campaign__box:hover,
+.campaign__box:focus {
+    transform: scale(1.2);
+    transition: all .5s;
 } */
 
-
-/* .hero {
-    background-image: url("images/rohingya-bgd.jpg");
-    background-position:center center;
-    position: relative;
-    background-size: cover;
-    padding-bottom:5em;
+.campaign__box:hover {
+    opacity: 0.7;
+    transition: all .5s;
   }
 
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.2);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-  } */
+@media screen and (max-width: 1000px) {
+    .campaigns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-row: auto; */
+        /* height: 4vh; */
+    }
+}
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navbar {
-        height: 1.8rem;
+        height: 1.5rem;
         font-size: 0.8rem;
     }
 
     .navbar__logo {
-        max-height: 70px;
-        padding-top: 20px;
+        max-height: 50px;
     }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__description {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    .hero__button {
+        
+    }
+
+    .campaigns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-row: auto; */
+        /* height: 4vh; */
+    }
+
+    .campaign__box {
+        height: 20vh;
+        font-size: 0.8rem;
+    }
+
+    .campaign__overlay {
+        height: 50px;
+    }
+
+
 }
