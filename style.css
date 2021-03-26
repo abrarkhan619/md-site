@@ -73,7 +73,7 @@ body {
     font-weight: bold;
     margin-top: 5px;
     cursor: pointer;
-  }
+}
 
 .hero__button:hover {
     background-color: #007504;
@@ -139,7 +139,27 @@ body {
 .campaign__box:hover {
     opacity: 0.7;
     transition: all .5s;
-  }
+}
+
+.socials {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__container {
+    /* height: 40px; */
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.social__icons {
+    height: 40px;
+    margin: 5px;
+}
 
 @media screen and (max-width: 1000px) {
     .campaigns {
@@ -174,9 +194,9 @@ body {
         font-weight: 400;
     }
 
-    .hero__button {
+    /* .hero__button {
         
-    }
+    } */
 
     .campaigns {
         display: grid;
