@@ -71,7 +71,7 @@ body {
     display: inline-block;
     font-size: 1rem;
     font-weight: bold;
-    margin-top: 5px;
+    margin: 1rem 0;
     cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ body {
 
 .campaign__box{
     width: 100%;
-    height: 30vh;
+    height: 15rem; /* edit*/
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -95,25 +95,9 @@ body {
     display: flex;
     align-items:flex-end;
     justify-content:center;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     border: 2px solid #000;
     cursor: pointer;
-}
-
-.campaign1 {
-    background-image: url("images/rohingya-fire.jpg");
-}
-
-.campaign2 {
-    background-image: url("images/yemen-malnutrition.jpg");
-}
-
-.campaign3 {
-    background-image: url("images/mosque-syria.jpg");
-}
-
-.campaign4 {
-    background-image: url("images/water-well.jpg");
 }
 
 .campaign__overlay {
@@ -128,13 +112,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-
-/* .campaign__box:hover,
-.campaign__box:focus {
-    transform: scale(1.2);
-    transition: all .5s;
-} */
 
 .campaign__box:hover {
     opacity: 0.7;
@@ -164,9 +143,10 @@ body {
 @media screen and (max-width: 1000px) {
     .campaigns {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         /* grid-row: auto; */
         /* height: 4vh; */
+        font
     }
 }
 
@@ -206,12 +186,16 @@ body {
     }
 
     .campaign__box {
-        height: 20vh;
-        font-size: 0.8rem;
+        height: 8rem;
     }
 
     .campaign__overlay {
-        height: 50px;
+        height: 2.5rem;
+    }
+
+    .campaign__title {
+        font-size: 1rem;
+        /* font-weight: 500; */
     }
 
 
