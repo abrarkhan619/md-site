@@ -32,10 +32,10 @@ a {
 }
 
 .hero {
-    width: 100%;
+    width: 100vw;
     height: 60vh;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     overflow: hidden;
     color: white;
 }
@@ -137,6 +137,10 @@ a {
 
 
 @media screen and (max-width: 1000px) {
+    .hero {
+        background-size: cover;    
+    }
+
     .campaigns {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
