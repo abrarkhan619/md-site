@@ -55,6 +55,7 @@ a {
 .hero__description {
     font-weight: 400;
     font-size: 1.6rem;
+    max-width: 800px;
 }
 
 .overlay {
