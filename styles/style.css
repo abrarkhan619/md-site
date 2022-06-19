@@ -151,6 +151,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   max-height: 500px;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -261,7 +262,7 @@ section {
             transform: scaleX(1);
     -o-object-position: center;
        object-position: center;
-    height: 400px;
+    height: 500px;
   }
 }
 

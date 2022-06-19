@@ -115,6 +115,7 @@ section {
     margin: 0 auto;
     display: flex;
     max-height: 500px;
+    height: 100%;
     overflow: hidden;
     position: relative;
     &__content {
@@ -191,7 +192,7 @@ section {
             @media (max-width: 600px) {
                 transform: scaleX(1);
                 object-position: center;
-                height: 400px;
+                height: 500px;
             }
         }
         &::after {
