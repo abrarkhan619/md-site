@@ -190,7 +190,7 @@ section {
             object-fit: cover;
             object-position: center;
             @media (max-width: 600px) {
-                transform: scaleX(-1);
+                // transform: scaleX(-1);
                 object-position: center;
                 height: 500px;
             }
