@@ -258,8 +258,6 @@ section {
 
 @media (max-width: 600px) {
   .header--page__image img {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
     -o-object-position: center;
        object-position: center;
     height: 500px;
