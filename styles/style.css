@@ -14,10 +14,7 @@ body {
 h1 {
   font-size: 4rem;
   padding-bottom: 10px;
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 3px 3px white;
+  text-shadow: 2px 2px 7px #000000;
 }
 
 @media (max-width: 900px) {
@@ -157,10 +154,10 @@ section {
 }
 
 .header--page__content {
+  height: 100%;
+  width: 100%;
   position: absolute;
   z-index: 1;
-  top: 50%;
-  bottom: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,19 +165,12 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 20px;
-}
-
-@media (max-width: 600px) {
-  .header--page__content {
-    bottom: 60px;
-    left: 0;
-    right: 0;
-    padding-left: 0;
-  }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header--page__content h1 {
@@ -230,6 +220,10 @@ section {
   background: -webkit-linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
 }
 
+.header--page__content p.small-text {
+  margin-bottom: 2rem;
+}
+
 .header--page__image {
   z-index: 0;
   width: 80%;
@@ -269,17 +263,11 @@ section {
   content: '';
   height: 100%;
   width: 100%;
-  top: 0;
-  left: -10px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(255, 255, 255, 0)), color-stop(80%, black));
-  background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, black 80%);
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), color-stop(32%, rgba(0, 0, 0, 0.429031)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.429031) 32%, rgba(0, 0, 0, 0) 100%);
   z-index: 99;
-}
-
-@media (max-width: 600px) {
-  .header--page__image::after {
-    display: none;
-  }
 }
 
 .appeals .container {
