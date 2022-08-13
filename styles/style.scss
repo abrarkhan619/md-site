@@ -275,8 +275,8 @@ section {
 
     &__image {
         z-index: 0;
-        width: 80%;
-        margin-left: auto;
+        width: 100%;
+        // margin-left: auto;
         height: fit-content;
         position: relative;
         @media (max-width: 970px) {
