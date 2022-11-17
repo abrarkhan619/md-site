@@ -229,11 +229,12 @@ section {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        padding: 0 1rem;
+        // padding: 0 1rem;
         text-align: center;
 
         h1 {
             margin: 0;
+            padding: 0 1rem;
         }
 
         p.description {
