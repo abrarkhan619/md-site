@@ -91,13 +91,30 @@ section {
     margin: 0 auto;
     background-color: transparent;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     position: absolute;
-    .wrapper {
-        max-width: 1400px;
-        width: 100%;
+
+    .header-banner {
+        background-color: red;
+        padding: 5px 5px;
+        text-align: center;
+        display: block;
+    
+        a {
+            color: white;
+            width: 100%;
+            display: block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .logo {
+
         padding: 20px;
-        margin: 0 auto;
+        margin: 0 auto 0 0;
         p {
             font-weight: 600;
             text-transform: uppercase;
